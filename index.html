@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shopping"><i class="ri-shopping-bag-line"></i> <span id="cart-count">0</span></a></li>
+                <li><a href="search"><i class="ri-search-line"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="shop">
+        <div class="middle-text">
+            <h2>New Arrivals. <span>Best selling of the month</span></h2>
+        </div>
+        <div class="product-content">
+            <!-- Product 1 -->
+            <div class="box" data-product-id="1">
+                <div class="box-img">
+                    <img src="images/product1.jpg" alt="Product 1">
+                </div>
+                <h3>Manhattan Toy work</h3>
+                <h4 class="price">$48.00</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="heart" onclick="toggleLike(this)">
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="box" data-product-id="2">
+                <div class="box-img">
+                    <img src="images/product6.jpg" alt="Product 2">
+                </div>
+                <h3>Wooden Blocks</h3>
+                <h4 class="price">$35.00</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="heart" onclick="toggleLike(this)">
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="box" data-product-id="3">
+                <div class="box-img">
+                    <img src="images/product3.jpg" alt="Product 3">
+                </div>
+                <h3>Educational Puzzle</h3>
+                <h4 class="price">$20.00</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="heart" onclick="toggleLike(this)">
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="box" data-product-id="4">
+                <div class="box-img">
+                    <img src="images/product4.jpg" alt="Product 4">
+                </div>
+                <h3>Stuffed Animal</h3>
+                <h4 class="price">$60.00</h4>
+                <div class="rating">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="heart" onclick="toggleLike(this)">
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="checkout">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <div id="total-price">Total: $0.00</div>
+        <button id="checkout-btn">Checkout</button>
+    </section>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
